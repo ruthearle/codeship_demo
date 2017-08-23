@@ -1,6 +1,6 @@
 demo:
   build:
-    image: myapp
+    image: rearle/codeship_demo
     dockerfile: Dockerfile
   links:
     - redis
