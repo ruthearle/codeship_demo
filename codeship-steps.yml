@@ -2,18 +2,18 @@
   steps:
     - name: checkrb
       service: demo
-      command: bundle exec ruby check.rb
+      command: bundle exec ruby ./lib/check.rb
     - name: test
       service: demo
-      command: bundle exec ruby test.rb
+      command: bundle exec ruby ./test/test.rb
     #- type: serial
       #steps:
       #- name: volumes_in
         #service: demo
-        #command: bundle exec ruby write.rb
+        #command: bundle exec ruby ./lib/write.rb
       #- name: volumes_out
         #service: demo
-        #command: bundle exec ruby read.rb
+        #command: bundle exec ruby ./lib/read.rb
 
 - type: serial
   steps:
