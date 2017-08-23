@@ -1,5 +1,5 @@
-require "redis"
 require "pg"
+require "redis"
 
 def exit_if_not(expected, current)
   puts "Expected: #{expected}"
